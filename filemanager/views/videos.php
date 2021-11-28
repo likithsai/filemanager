@@ -8,7 +8,6 @@
                 <h1 class="fw-light">Videos</h1>
             </div>
             <p class="lead text-muted">There are <code>1000</code> images of <code>1.2GB</code> size</p>
-            <button type="button" class="btn btn-sm btn-primary">Upload New Videos</button>
         </div>
     </div>
 </div>

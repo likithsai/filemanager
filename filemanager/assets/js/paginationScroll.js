@@ -5,18 +5,11 @@ $(function($) {
             url: '',
             div: '',
             data: '',
-            loadingDiv: '',
             limit: 20
         }, options);
 
         $.ajax({
             method: 'POST',
-			beforeSend: function(){
-				$(settings.loadingDiv).show();
-			},
-			error: function(request, status, err) {
-				alert("ERROR: " + request + status + err);
-			},
             data: {
                 'getData': 'ok',
                 'limit': settings.limit,
@@ -24,7 +17,6 @@ $(function($) {
             },
             url: settings.url,
             success: function(data) {
-                $(settings.loadingDiv).hide();
                 $(settings.div).append(data);
                 if(data.length !== 0) {
                     loadData = true;
