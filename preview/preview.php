@@ -30,7 +30,7 @@
         }
 
         video::-webkit-media-controls-fullscreen-button,
-        video::-webkit-media-controls-mute-button,
+        /* video::-webkit-media-controls-mute-button, */
         video::-webkit-media-controls-volume-slider,
         video::-webkit-media-controls-overflow-menu-list-item {
             display: none !important;
@@ -109,9 +109,9 @@
 
             $(window).scroll(function() {
                 //  pause all videos
-                $('video').each(function() {
-                    $(this).get(0).pause();
-                });
+                // $('video').each(function() {
+                //     $(this).get(0).pause();
+                // });
 
                 if (document.body.scrollHeight - $(this).scrollTop() <= $(this).height() && loadData == true) {
                     pagecount = parseInt(pagecount) + 1;

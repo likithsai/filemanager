@@ -22,7 +22,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <video controls preload="auto" width="100%" height="90%">
+                        <video controls="true" preload="auto" width="100%" height="90%" loop playsinline playsInline>
                             <source src="' . $v['file_path'] . '">
                         </video>
                     </div>';
