@@ -1,0 +1,7 @@
+video::-webkit-media-controls {
+    display: none;
+}
+
+video {
+    max-height: 200px;
+}
