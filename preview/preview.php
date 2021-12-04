@@ -71,7 +71,8 @@
                     url: url,
                     type: 'POST',
                     data: {
-                        page: pagecount
+                        page: pagecount,
+                        type: 'image'
                     },
                     cache: false,
                     success: function(result) {
